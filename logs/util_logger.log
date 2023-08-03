@@ -1,0 +1,10 @@
+2023-07-31 19:22:41,887.util_logger.INFO =============================================================
+2023-07-31 19:22:41,887.util_logger.INFO Today is 2023-07-31 at 07:22 PM
+2023-07-31 19:22:41,914.util_logger.INFO This file is running on: nt Windows 10
+2023-07-31 19:22:41,914.util_logger.INFO The Python version is: 3.11.3
+2023-07-31 19:22:41,914.util_logger.INFO The active environment path is:   C:\Users\Hayley\AppData\Local\Programs\Python\Python311
+2023-07-31 19:22:41,915.util_logger.INFO The current working directory is: C:\Users\Hayley\cintel-05-live-updates
+2023-07-31 19:22:41,915.util_logger.INFO =============================================================
+2023-07-31 19:22:41,915.util_logger.INFO Starting util_logger.py
+2023-07-31 19:22:41,915.util_logger.INFO Information is logged to: logs/logs\util_logger.log
+2023-07-31 19:22:41,916.util_logger.INFO Ending util_logger.py
