@@ -64,8 +64,8 @@ def get_API_key():
 def lookup_lat_long(location):
     """Return the latitude and longitude for the given location."""
     locations_dictionary = {
-        "ELY MN": {"latitude": 47.903237, "longitude": -91.867087},
-        "Death Valley CA": {"latitude": 36.5323, "longitude": -116.93},
+        "Kansas City US": {"latitude": 39.0997, "longitude": -94.5786},
+        "Denver US": {"latitude": 39.7392, "longitude": -104.9847},
         "Maryville MO": {"latitude": 40.346102, "longitude": -94.872471},
     }
     answer_dict = locations_dictionary[location]
@@ -81,8 +81,8 @@ async def get_temperature_from_openweathermap(lat, long):
     logger.info(f"Calling fetch_from_url for {open_weather_url}")
     result = await fetch_from_url(open_weather_url, "json")
     logger.info(f"Data from openweathermap: {result}")
-    temp_F = data["main"]["temp"]
-    # temp_F = randint(68, 77)  # Use to test code without calling API
+    # temp_F = data["main"]["temp"]
+    temp_F = randint(68, 77)
     return temp_F
 
 
@@ -98,7 +98,7 @@ async def update_csv_location():
     """Update the CSV file with the latest location information."""
     logger.info("Calling update_csv_location")
     try:
-        locations = ["ELY MN", "Death Valley CA", "Maryville MO"]
+        locations = ["Kansas City US", "Denver US", "Maryville MO"]
         update_interval = 60  # Update every 1 minute (60 seconds)
         total_runtime = 15 * 60  # Total runtime maximum of 15 minutes
         num_updates = 10  # Keep the most recent 10 readings
